@@ -121,7 +121,7 @@ nmap <leader>bp :bprevious<CR>
 nnoremap <leader>jc :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>ji :YcmCompleter GoToInclude<CR>
-nnoremap <leader>gt :YcmCompleter GetTypeImprecise<CR>
+nnoremap <leader>gt :YcmCompleter GetType<CR>
 nnoremap <leader>fi :YcmCompleter FixIt<CR>
 " YCM 补全菜单配色
 " 菜单
