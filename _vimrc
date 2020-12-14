@@ -2,7 +2,8 @@ set nocompatible
 set number
 set hlsearch
 set encoding=utf-8
-set rtp+=~/vimfile/autoload/
+set rtp+=~/vimfiles/autoload/
+set rtp+=~/vimfiles/autoload/plug.vim
 set expandtab
 set tabstop=4
 set shiftwidth=4 
@@ -14,7 +15,6 @@ let mapleader=","
 
 nnoremap <leader>sv :source $MYVIMRC<CR>
 inoremap jk <esc>
-inoremap <esc> <nop>
 nmap <Leader>n :NERDTreeToggle<CR>
 nmap <Leader>vim :vsplit $HOME/_vimrc<CR>
 nmap <Leader>m :!python3 %<CR>
@@ -37,19 +37,15 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'easymotion/vim-easymotion'
-Plug 'ludovicchabant/vim-gutentags'
-Plug 'skywind3000/gutentags_plus'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/vim-colors-solarized'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'dyng/ctrlsf.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'vim-scripts/indentpython.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'rhysd/vim-clang-format'
-Plug 'minrui-hust/color-cpp.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'rakr/vim-one'
+Plug 'bfrg/vim-cpp-modern'
 call plug#end()
 
 "******************cpp-enhanced-highlight*****************
