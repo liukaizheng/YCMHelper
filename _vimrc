@@ -2,6 +2,7 @@ set nocompatible
 set number
 set hlsearch
 set encoding=utf-8
+set renderoptions=type:directx "ligatures
 set rtp+=~/vimfiles/autoload/
 set rtp+=~/vimfiles/autoload/plug.vim
 set expandtab
@@ -100,7 +101,7 @@ let g:airline_inactive_alt_sep=1
 " can be overridden by defining a value. >
 let g:airline_theme='one'
 set background=dark
-colorscheme one
+colorscheme lightcolors
 "******************air line*************************
 
 " 正向遍历同名标签
