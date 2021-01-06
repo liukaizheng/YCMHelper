@@ -46,6 +46,9 @@ syntax enable
 syntax on
 filetype plugin indent on
 
+nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>vim :vsplit $MYVIMRC<CR>
+
 nmap <leader>m <Plug>(lcn-menu)
 nmap K <Plug>(lcn-hover)
 nmap gd <Plug>(lcn-definition)
@@ -69,7 +72,9 @@ noremap <leader>lf :<C-U><C-R>=printf("Leaderf file %s", "")<CR><CR>
 
 let g:airline#extensions#tabline#enabled = 1
 
-au VimEnter * GuiPopupmenu 0
+if exists('g:GuiLoaded')
+    au VimEnter * GuiPopupmenu 0
+    set guifont=Hack:h10
+    colorscheme material
+endif
 
-colorscheme material
-set guifont=Hack:h10
