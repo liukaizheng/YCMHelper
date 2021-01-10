@@ -1,0 +1,4 @@
+{
+    "clangd.semanticHighlighting": true,
+    "rust-analyzer.serverPath": "C:/Users/lkzhe/.cargo/bin/rust-analyzer.exe"
+}
